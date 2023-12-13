@@ -34,20 +34,20 @@ struct SpeechView : View {
                     Button(action: {
                         Task
                         {
-                            isRecording.toggle()
-                            if isRecording{
-                                simpleEndHaptic()
-                                player.seek(to: .zero)
-                                player.play()
-                                speechRecognizer.reset()
-                                speechRecognizer.transcribe()
-                                print(speechRecognizer.transcript)
-                            }
-                            else{
-                                simpleSuccessHaptic()
-                                speechRecognizer.stopTranscribing()
-                                print(speechRecognizer.transcript)
-                            }
+//                            isRecording.toggle()
+//                            if isRecording{
+//                                simpleEndHaptic()
+//                                player.seek(to: .zero)
+//                                player.play()
+//                                speechRecognizer.reset()
+//                                speechRecognizer.transcribe()
+//                                print(speechRecognizer.transcript)
+//                            }
+//                            else{
+//                                simpleSuccessHaptic()
+//                                speechRecognizer.stopTranscribing()
+//                                print(speechRecognizer.transcript)
+//                            }
                         }})
                     {
                         if !isRecording{
